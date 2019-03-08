@@ -1,30 +1,26 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Titles from './titles';
-import Buttons from './buttons';
-import Data from './projects.json';
+import List from './ProjectList.js'
+
+
+
 
 class Projects extends Component{
     render() {
+
       return (
           <Router>
-          <div>
-          {Data.map((postDetail, index)=>{
-              return(
-                  <div>
-                <h1>{postDetail.Name} </h1>
-                <h4>{postDetail.Date} </h4>
-                
-                </div>
-
-              )
-          })}
-          </div>
+          <section class="projectBackground">
+            <div class="projCardContainer">
+            <List />
+            </div>
+          </section>
           </Router>
-
       );
     }
 }
+
+
 
 
 

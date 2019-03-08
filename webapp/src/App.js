@@ -3,19 +3,25 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.css';
 import Home from './components/home';
 import Projects from './components/projects';
+import Lab from './components/lab';
 import Error from './components/error';
 
+const supportsHistory = 'pushState' in window.history;
 
 class App extends Component {
-  render() {
-    return (
-        <Router>
-        <Switch>
-        <Route path="/" exact component={Home} />
 
-        <Route path="/projects" exact component={Projects} />
+
+  render() {
+
+    return (
+        <Router forceRefresh={!supportsHistory}>
+        <div>
+        <Switch>
+        <Route path="/" exact component={Home}/>
+        <Route path="/lab" exact component={Lab} />
         <Route component={Error} />
         </Switch>
+        </div>
         </Router>
 
     );
