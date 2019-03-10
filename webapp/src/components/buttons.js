@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {Typography} from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Projects from './projects.js';
-import Scroll from 'react-scroll'
 
 
 
@@ -21,7 +20,7 @@ const Buttons = () => (
             Lab
           </Button>
         </div>
-      
+
     </section>
 
 );

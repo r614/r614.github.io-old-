@@ -21,6 +21,9 @@ a {
   font-size: 35px;
   color: #9E9E9E;
 }
+.AccordionTitle:hover{
+  color: white;
+}
 
 .listText{
   color: white;
