@@ -1,9 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
 import Accordion from './Accordion.js'
 import Data from './projects.json';
 import Button from '@material-ui/core/Button';
-
 
 
 function List(){
@@ -15,16 +13,31 @@ function List(){
 
       <div label= {postDetail.Name}>
         <div class = 'listText'>
-        {postDetail.Date} <br />
-        {postDetail.About} <br />
-        <div class = 'gitButtons'>
-        <Button variant ='outlined' href={postDetail.Link}>
-          Github
-        </Button>
+        <div class='row'>
+          <div class='column'>
+            <div class='left-column'>
+              Date: <br />
+              About: <br />
+
+            </div>
+          </div>
+          <div class='doublecolumn'>
+            <div class='right-column'>
+            {postDetail.Date} <br />
+            {postDetail.About} <br />
+            <div class = 'gitButtons'>
+              {postDetail.Link !== "" &&
+              <Button variant = "outlined" color="inherit" href={postDetail.Link}>
+                Github
+              </Button>
+              }
+            </div>
+
+
+
+            </div>
+          </div>
         </div>
-
-
-
         </div>
       </div>
       )

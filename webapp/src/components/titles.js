@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Titles = () => (
 
-    <section>
-        <section class="titleContainer">
+<section>
+    <section class="titleContainer">
         <span>
             <div class="mainTitle">Hi!</div>
                 <div class ="subTitle"> Nice to meet you! <br />

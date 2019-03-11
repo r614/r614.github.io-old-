@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-import {Typography} from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import Projects from './projects.js';
 
 
 
@@ -13,7 +11,7 @@ const Buttons = () => (
           <Button href="http://www.github.com/r614">
             Github
           </Button>
-          <Button href="https://docs.google.com/document/d/1U8Z55E2bX1hhpHmxjPAfZA-IjWTY3Osp3-AtyjI-33w/edit?usp=sharing">
+          <Button href="https://drive.google.com/open?id=1U8Z55E2bX1hhpHmxjPAfZA-IjWTY3Osp3-AtyjI-33w">
             Resume
           </Button>
           <Button component={Link} to="/lab">
