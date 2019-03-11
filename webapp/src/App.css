@@ -56,7 +56,7 @@ a:hover
 .wrapper {
     display:flex;
     flex-direction: column;
-    height: 100vh;         /* Add this */
+    min-height: 100vh;         /* Add this */
 
 }
 
@@ -126,8 +126,6 @@ a:hover
   flex: 3;
 }
 
-
-
 .mainTitle{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: bold;
@@ -160,6 +158,8 @@ button{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background: #404452;
+  background-size: contain;
 }
 
 .projectBackground{
@@ -168,7 +168,7 @@ button{
   top: 0px;
   left: 0px;
   width: 100;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
 }
