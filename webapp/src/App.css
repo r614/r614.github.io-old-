@@ -164,6 +164,7 @@ button{
 
 .projectBackground{
   background: #404452;
+  background-size: contain;
   top: 0px;
   left: 0px;
   width: 100;
