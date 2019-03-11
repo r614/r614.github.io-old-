@@ -42,7 +42,7 @@ class AccordionSection extends Component {
               background: 'transparent',
               marginTop: 10,
               padding: '10px 20px',
-              width: '120%'
+              width: '100%'
               }}
           >
             {this.props.children}
