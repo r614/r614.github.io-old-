@@ -17,6 +17,9 @@ const Buttons = () => (
           <Button component={Link} to="/lab">
             Lab
           </Button>
+          <Button href="mailto:roshan.pawar@alumni.ubc.ca">
+            Contact
+          </Button>
         </div>
 
     </section>

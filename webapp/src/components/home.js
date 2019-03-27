@@ -1,7 +1,7 @@
 import React from 'react';
 import Titles from './titles';
 import Buttons from './buttons';
-import Projects from './projects.js';
+
 
 
 const Home = () => (
@@ -11,7 +11,6 @@ const Home = () => (
         <Titles />
         <Buttons />
     </div>
-    <Projects />
     </section>
 
 
